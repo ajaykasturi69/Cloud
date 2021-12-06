@@ -1,0 +1,58 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<title> Registration Page </title> 
+		<style>
+            body {font-family: "Times New Roman", Times, serif;}
+            form {border: 5px solid black;
+                background-color: cyan;
+                border-radius: 10px;
+                padding: 15px;}
+
+            input[type=text], input[type=password] {
+            width: 50%;
+            padding: 15px 20px;
+            margin: 12px 0;
+            display: inline-block;
+            border: 2px solid #a6a6a6;
+            box-sizing: border-box;
+            }
+
+            .btn {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 22px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            }
+
+            .container {
+            padding: 20px;
+            }
+
+
+            span.psw {
+            float: right;
+            padding-top: 20px;
+            }
+        </style>		 
+	</head> 
+	<body></br></br></br></br></br> 
+		<div align="center" class="container"> 
+            <h2>Register</h2>
+				<form action = {{ url_for('register') }} method="post"> 
+                    <label><b>Email ID<ls></ls></b> </label>
+                    <input id="email" name="email" type="text" placeholder="Please enter email ID" class="textbox" required/></br></br>  
+                    <label><b>Username</b> </label>
+					<input id="username" name="username" type="text" placeholder="Please enter username" class="textbox" required/></br></br> 
+					<label><b>Password</b></label>
+                    <input id="password" name="password" type="password" placeholder="Please enter password" class="textbox" required/></br></br></br> 
+                    <input type="submit" class="btn"  value="Sign Up"></br> 
+				</form> 
+		</div> 
+	</body> 
+</html> 

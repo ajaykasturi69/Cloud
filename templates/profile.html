@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Profile
+        </title>
+        
+        <style>
+    
+    body{
+        
+        background: radial-gradient(#ff9966, white);
+    }
+       
+    h1{
+        font-size: 25px;
+        font-family: "Times New Roman", Times, serif;
+       } 
+    .btn {  
+            float: right;
+            background-color: #800000;
+            color: white;
+            padding: 15px 15px;
+            margin-top: 2px;
+            margin-right: 2px;
+            border: none;
+            text-decoration:none;
+         
+            font-size: 18px; 
+            
+            }
+
+            .btns {  
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-size: larger;
+            padding: 2rem 2rem;
+            margin-top: 2px;
+            margin-right: auto;
+            margin-left: auto;
+            border: none;
+            text-decoration:none;
+         
+            font-size: 20px; 
+            
+            }
+
+.vertical-center {
+  margin: 5rem 20rem;
+  position: top;
+  align-content: center;
+  display: flex;
+  align-content:space-between ;
+  text-align: center;
+}
+
+
+</style>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    </head>
+
+
+<body>
+
+    
+
+    
+    <div>
+     <a class="btn" href="{{ url_for('logout')}}">logout</a> 
+     
+        <br>
+        <br>
+    </div>
+
+    <div>
+    </br>
+       <h1><center>Welcome {{ username }}</center></h1>
+      
+  </div>
+ 
+    <div class="vertical-center">
+      
+            <a class="btns" href="{{ url_for('dashboard')}}">Dashboard</a>
+            <a class="btns" href="{{ url_for('Search')}}"> Search Data </a>
+            <a class="btns" href="{{ url_for('upload')}}"> Upload Data</a>
+            <br>
+            <br>
+        
+    </div>
+
+
+</body>
+</html>
